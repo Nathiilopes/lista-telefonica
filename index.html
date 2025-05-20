@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefônica</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista telefônica</h1>
+        </header>
+        <form id="form-contato">
+            <h2>Adicionar contato</h2>
+            <input type="text" id="nome-contato" required placeholder="Nome contato">
+            <h2>Adicionar telefone</h2>
+            <input type="number" id="num-contato" required placeholder="(xx) xxxxx-xxxx">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome contato</th>
+                    <th>Número contato</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td id="nome-salvo">---</td>
+                    <td id="numero-salvo">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
